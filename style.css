@@ -1,0 +1,215 @@
+* {
+  margin: 0;
+  padding: 0;
+  word-spacing: 0;
+}
+
+body {
+  background-image: url(16311889_rm373batch13-086.jpg);
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainnav {
+  color: white;
+  border: none;
+  border-radius: 1rem;
+  width: 90vw;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.135);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(3.5px);
+  -webkit-backdrop-filter: blur(3.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.inputdiv {
+  width: 75vw;
+  height: 20vh;
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.forinputdate[type="date"] {
+  font-family: Arial, sans-serif;
+  font-size: 1rem;
+  padding: 0.8rem;
+  border: 2px solid #007bff;
+  border-radius: 0.2rem;
+  outline: none;
+}
+
+.forinputdate[type="date"]::-webkit-calendar-picker-indicator {
+  display: none;
+  -webkit-appearance: none;
+}
+
+.forinputdate[type="date"]::-moz-calendar-picker-indicator {
+  display: none;
+}
+
+.forinputdate[type="date"] {
+  position: relative;
+  background: url("calendar-icon.png") no-repeat right 10px center;
+  background-size: 1.2rem;
+  width: 22vw;
+  height: 2vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  word-spacing: 0.5rem;
+}
+
+/* calculated button started */
+.holographic-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 1vh;
+  background: #000;
+}
+
+.holographic-card {
+  width: 20vw;
+  height: 10vh;
+  background: #111;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  transition: all 0.5s ease;
+}
+
+.holographic-card h2 {
+  color: #0ff;
+  font-size: 2rem;
+  position: relative;
+  z-index: 2;
+}
+
+.holographic-card::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 300%;
+  background: linear-gradient(
+    0deg,
+    transparent,
+    transparent 30%,
+    rgba(0, 255, 255, 0.3)
+  );
+  transform: rotate(-45deg);
+  transition: all 0.7s ease;
+  opacity: 0;
+}
+
+.holographic-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+}
+
+.holographic-card:hover::before {
+  opacity: 1;
+  transform: rotate(-45deg) translateY(100%);
+}
+
+/* calculated button end */
+
+.outputdiv {
+  width: 75vw;
+  height: 10vh;
+  border-radius: 0.5rem;
+  border: none;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.outputcal {
+  width: 8vw;
+  height: 10vh;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+  border-radius: 0.2rem;
+  padding: 1rem;
+  font-weight: 600;
+  font-size: 1.5rem;
+  text-align: center;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  left: 1.6rem;
+}
+
+.inputcal {
+  color: white;
+  width: 8vw;
+  height: 10vh;
+  border: none;
+  border-radius: 0.2rem;
+  padding: 1rem;
+  font-weight: 600;
+  font-size: 1.5rem;
+  text-align: center;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+  transition: transform 0.5s ease, -webkit-box-shadow 0.5s ease,
+    -moz-box-shadow 0.5s ease, box-shadow 0.5s ease;
+}
+
+.inputcal:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+}
+
+.inputcal:focus {
+  outline: none;
+}
+
+.giveinfo {
+  font-size: 0.9rem;
+  position: relative;
+  top: 2rem;
+  right: 3.5rem;
+  opacity: 0.8;
+  text-align: center;
+}
+
+.gentext {
+  font-size: 1.2rem;
+  font-weight: 600;
+  font-family: sans-serif;
+}
+
+.inputcal::placeholder {
+  font-size: 0.9rem;
+  position: relative;
+}
