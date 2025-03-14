@@ -112,12 +112,10 @@ body {
   left: -50%;
   width: 200%;
   height: 300%;
-  background: linear-gradient(
-    0deg,
-    transparent,
-    transparent 30%,
-    rgba(0, 255, 255, 0.3)
-  );
+  background: linear-gradient(0deg,
+      transparent,
+      transparent 30%,
+      rgba(0, 255, 255, 0.3));
   transform: rotate(-45deg);
   transition: all 0.7s ease;
   opacity: 0;
@@ -147,7 +145,7 @@ body {
 
 .outputcal {
   width: 8vw;
-  height: 10vh;
+  height: 6vh;
   border-right: 2px solid black;
   border-bottom: 2px solid black;
   border-radius: 0.2rem;
@@ -160,8 +158,23 @@ body {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  position: relative;
-  left: 1.6rem;
+  /* position: relative;
+  left: 1.6rem; */
+}
+
+.forlabelandoutput {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-left: 0.7rem;
+  margin-right: 0.7rem;
+}
+
+.distribute {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .inputcal {
@@ -196,9 +209,6 @@ body {
 
 .giveinfo {
   font-size: 0.9rem;
-  position: relative;
-  top: 2rem;
-  right: 3.5rem;
   opacity: 0.8;
   text-align: center;
 }
