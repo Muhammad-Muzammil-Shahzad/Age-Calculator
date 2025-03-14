@@ -5,6 +5,384 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+
+    <style>
+        /* xs */
+        @media (max-width: 475px) {
+            .mainnav {
+                width: 80vw;
+            }
+
+            .inputdiv {
+
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .inputcal {
+                width: 40vw;
+                height: 2vh;
+                margin-top: 0.5rem;
+                font-size: 1.2rem;
+            }
+
+            .holographic-container {
+                height: 6vh;
+                width: 35vw;
+                margin-top: 1rem;
+                padding: 0.5rem;
+                border-radius: 0.5rem;
+            }
+
+            .holographic-card {
+                height: 6vh;
+                width: 35vw;
+                padding: 0.5rem;
+                border-radius: 0.5rem;
+            }
+
+            .outputdiv {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .distribute {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                align-items: center;
+                position: relative;
+                top: 2rem;
+            }
+
+            .giveinfo {
+                font-size: 0.8rem;
+            }
+
+            .outputcal {
+                height: 1vh;
+                width: 10vw;
+                font-size: 1rem;
+                text-align: center;
+            }
+
+            .dbtop {
+                margin-bottom: 1rem;
+            }
+
+            .dbbottom {
+                margin-top: 1rem;
+            }
+        }
+
+
+        /* md */
+        @media (max-width: 860px) {
+
+
+            .mainnav {
+                width: 80vw;
+            }
+
+            .inputdiv {
+
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .inputcal {
+                width: 60vw;
+                height: 10vh;
+                margin-top: 1rem;
+                margin-bottom: 1rem;
+                font-size: 1.2rem;
+            }
+
+            .holographic-container {
+                height: 6vh;
+                width: 35vw;
+                margin-top: 1rem;
+                padding: 0.5rem;
+                border-radius: 0.5rem;
+            }
+
+            .holographic-card {
+                height: 6vh;
+                width: 35vw;
+                padding: 0.5rem;
+                border-radius: 0.5rem;
+            }
+
+            .outputdiv {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .distribute {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                align-items: center;
+                position: relative;
+                top: 2rem;
+            }
+
+            .giveinfo {
+                font-size: 0.8rem;
+            }
+
+            .outputcal {
+                height: 2vh;
+                width: 15vw;
+                font-size: 1rem;
+                text-align: center;
+                margin: 0.5rem;
+            }
+
+            .dbtop {
+                margin-bottom: 1rem;
+            }
+
+            .dbbottom {
+                margin-top: 1rem;
+            }
+        }
+
+        /* lg */
+        @media (max-width: 540px) {
+
+            .mainnav {
+                width: 80vw;
+            }
+
+            .inputdiv {
+
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .inputcal {
+                width: 40vw;
+                height: 2vh;
+                margin-top: 0.5rem;
+                font-size: 1.2rem;
+            }
+
+            .holographic-container {
+                height: 6vh;
+                width: 35vw;
+                margin-top: 1rem;
+                padding: 0.5rem;
+                border-radius: 0.5rem;
+            }
+
+            .holographic-card {
+                height: 6vh;
+                width: 35vw;
+                padding: 0.5rem;
+                border-radius: 0.5rem;
+            }
+
+            .outputdiv {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .distribute {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                align-items: center;
+                position: relative;
+                top: 2rem;
+            }
+
+            .giveinfo {
+                font-size: 0.8rem;
+            }
+
+            .outputcal {
+                height: 1vh;
+                width: 10vw;
+                font-size: 1rem;
+                text-align: center;
+            }
+
+            .dbtop {
+                margin-bottom: 1rem;
+            }
+
+            .dbbottom {
+                margin-top: 1rem;
+            }
+        }
+
+        /* xl */
+        @media (max-width: 345px) {
+
+            .mainnav {
+                width: 80vw;
+            }
+
+            .inputdiv {
+
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .inputcal {
+                width: 40vw;
+                height: 2vh;
+                margin-top: 0.5rem;
+                font-size: 1.2rem;
+            }
+
+            .holographic-container {
+                height: 4vh;
+                width: 40vw;
+                margin-top: 1rem;
+                padding: 1rem;
+                border-radius: 0.5rem;
+            }
+
+            .holographic-card {
+                height: 4vh;
+                width: 40vw;
+                padding: 1rem;
+                border-radius: 0.5rem;
+            }
+
+            .outputdiv {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .distribute {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                align-items: center;
+                position: relative;
+                top: 2rem;
+            }
+
+            .giveinfo {
+                font-size: 0.8rem;
+            }
+
+            .outputcal {
+                height: 1vh;
+                width: 10vw;
+                font-size: 1rem;
+                text-align: center;
+            }
+
+            .dbtop {
+                margin-bottom: 1rem;
+            }
+
+            .dbbottom {
+                margin-top: 1rem;
+            }
+        }
+
+
+
+        /* 2xl */
+        @media (max-width: 376px) {
+
+            .mainnav {
+                width: 80vw;
+            }
+
+            .inputdiv {
+
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .inputcal {
+                width: 40vw;
+                height: 2vh;
+                margin-top: 0.5rem;
+                font-size: 1.2rem;
+            }
+
+            .holographic-container {
+                height: 2vh;
+                width: 50vw;
+                margin-top: 1rem;
+                padding: 1rem;
+                border-radius: 0.5rem;
+                position: relative;
+                bottom: 1rem;
+
+            }
+
+            .holographic-card {
+                height: 2vh;
+                width: 50vw;
+                padding: 1rem;
+                border-radius: 0.5rem;
+            }
+
+            .outputdiv {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .distribute {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                align-items: center;
+                position: relative;
+                top: 2rem;
+            }
+
+            .giveinfo {
+                font-size: 0.8rem;
+            }
+
+            .outputcal {
+                height: 1vh;
+                width: 10vw;
+                font-size: 1rem;
+                text-align: center;
+            }
+
+            .dbtop {
+                margin-bottom: 1rem;
+            }
+
+            .dbbottom {
+                margin-top: 1rem;
+            }
+        }
+    </style>
+
+
+
     <title>Age Calculator</title>
 </head>
 
@@ -16,21 +394,52 @@
             <input class="inputcal" id="inputdays" placeholder="Enter date">
             <div class="holographic-container" onclick="todisplay()">
                 <div class="holographic-card">
-                  <h2>Calculate</h2>
+                    <h2>Calculate</h2>
                 </div>
-              </div>
+            </div>
         </div>
 
-        <p class="gentext">YOU ARE</p>
+        <!-- <p class="gentext">YOU ARE</p> -->
+
         <div class="outputdiv">
-            <h3 class="outputcal" id="outputyears"></h3><p class="giveinfo">Years</p>
-            <h3 class="outputcal" id="outputmonths"></h3><p class="giveinfo">Months</p>
-            <h3 class="outputcal" id="outputdays"></h3><p class="giveinfo">Days</p>
-            <h3 class="outputcal" id="outputhours"></h3><p class="giveinfo">Hours</p>
-            <h3 class="outputcal" id="outputminutes"></h3><p class="giveinfo">Minutes</p>
-            <h3 class="outputcal" id="outputsecond"></h3><p class="giveinfo">Seconds</p>
+            <div class="distribute dbtop">
+                <div class="forlabelandoutput">
+                    <h3 class="outputcal" id="outputyears"></h3>
+                    <p class="giveinfo">Years</p>
+                </div>
+
+                <div class="forlabelandoutput">
+                    <h3 class="outputcal" id="outputmonths"></h3>
+                    <p class="giveinfo">Months</p>
+                </div>
+                <div class="forlabelandoutput">
+                    <h3 class="outputcal" id="outputdays"></h3>
+                    <p class="giveinfo">Days</p>
+                </div>
+
+
+            </div>
+            <div class="distribute dbbottom">
+                <div class="forlabelandoutput">
+                    <h3 class="outputcal" id="outputhours"></h3>
+                    <p class="giveinfo">Hours</p>
+                </div>
+                <div class="forlabelandoutput">
+                    <h3 class="outputcal" id="outputminutes"></h3>
+                    <p class="giveinfo">Minutes</p>
+                </div>
+                <div class="forlabelandoutput">
+                    <h3 class="outputcal" id="outputsecond"></h3>
+                    <p class="giveinfo">Seconds</p>
+                </div>
+            </div>
+
+
+
         </div>
-        <p class="gentext">OLD</p>
+
+
+    
 
 
 
